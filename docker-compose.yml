@@ -1,0 +1,9 @@
+services:
+  nodes:
+    build:
+      context: .
+      buildfile: Dockerfile
+    container_name: nexus-cli-1 # Optional: give your container a specific name
+    tty: true
+    environment:
+      WALLET_ADDRESS: "YOUR_WALLET_ADDRESS"
